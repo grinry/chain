@@ -1,0 +1,30 @@
+js:
+  tab-width: 4
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  trailing-commas: es6
+  semicolons: true
+  arrow-parens: always
+  bracket-spacing: true
+  finder:
+    exclude:
+      - node_modules
+    name:
+      - "*.js"
+    not-name:
+      - "*.min.js"
+ts:
+  tab-width: 4
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  trailing-commas: es6
+  semicolons: true
+  arrow-parens: always
+  bracket-spacing: true
+  finder:
+    exclude:
+      - node_modules
+    name:
+      - "*.ts"
