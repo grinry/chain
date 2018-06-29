@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/kiberzauras/chain.svg?branch=master)](https://travis-ci.org/kiberzauras/chain)
+[![Build Status](https://travis-ci.org/grinry/chain.svg?branch=master)](https://travis-ci.org/grinry/chain)
 
 # About `chain`
 

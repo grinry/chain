@@ -1,27 +1,11 @@
-class TxIn {
-    public txOutId: string;
-    public txOutIndex: number;
-    public signature: string;
-}
+import { Transaction } from './transaction';
 
-class TxOut {
-    public address: string;
-    public amount: number;
-    public contractData: string;
-
-    constructor(address: string, amount: number, contractData: string) {
-        this.address = address;
-        this.amount = amount;
-        this.contractData = contractData;
-    }
-}
-
-class Block {
+export class Block {
     public index: number;
     public hash: string;
     public previousHash: string;
     public timestamp: number;
-    public data: Transaction[];
+    public data: Array<Transaction>;
     public difficulty: number;
     public nonce: number;
 
@@ -30,7 +14,7 @@ class Block {
         hash: string,
         previousHash: string,
         timestamp: number,
-        data: Transaction[],
+        data: Array<Transaction>,
         difficulty: number,
         nonce: number
     ) {
@@ -44,10 +28,3 @@ class Block {
     }
 }
 
-class Transaction {
-    public id: string;
-
-    public txIns: TxIn[];
-    public txOuts: TxOut[];
-    public contractData: string;
-}
