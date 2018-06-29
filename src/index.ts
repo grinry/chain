@@ -1,11 +1,11 @@
-class Startup {
-    constructor() {
-        //
-    }
+import container from './container';
+import args from './arguments';
+import HttpServer from './server/http';
 
-    public item(): string {
-        return 'this is an item';
-    }
+if (args.hasOwnProperty('http-server')) {
+  const httpPort = args['http-port'] || 8080;
+  const http = new HttpServer(httpPort);
+  http.init();
 }
 
 console.log('Running!');

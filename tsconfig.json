@@ -2,12 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "lib": ["es2017", "dom"],
     "rootDir": ".",
     "outDir": "dist",
     "sourceMap": false,
     "declaration": false,
     "removeComments": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "experimentalDecorators": true
   },
   "include": [
     "src/**/*.ts"
